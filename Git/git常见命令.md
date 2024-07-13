@@ -2,12 +2,13 @@
 
 ## 本地仓库
 
-### 配置用户名邮箱
+### Git配置
 
 ``````git
 git config --global user.name xx //设置用户名
 git config --global user.email xxxx.com //设置邮箱
 git config --global credential.helper store //存储用户凭证
+\git config --global http.proxy http://127.0.0.1:7890 //设置代理
 ``````
 
 ### 初始化仓库
@@ -106,6 +107,18 @@ temp/**/*.log //忽略temp目录下的及其子目录下的文件
 > windows下ssh目录为 **C:\Windows\System32\OpenSSH**， 生成密钥匙时指定文件夹，如果已经生成过密钥，直接回车会导致覆盖前一个密钥，导致前一个密钥的失效，再次生成时需要指定新的文件夹
 
 生成本地公钥 `ssh-keygen -t rsa -b 4096`
+
+`git push` 
+
+`git pull`
+
+本地仓库关联远程仓库
+
+``````
+git remote add origin https://github.com/EricSc0ttish/Learning.git
+git branch -M main
+git push -u origin main
+``````
 
 
 
