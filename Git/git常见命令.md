@@ -26,6 +26,7 @@ git config --global credential.helper store //存储用户凭证
 ``````git
 git add xxx //.表示添加所有改动文件到缓存
 git commit -m "xxx" //-m 添加信息，类似此次添加的comm的标题
+git commit -am "xxxx" //add commit 合并提交
 ``````
 
 ### 查看提交记录
